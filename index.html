@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgenticEdge | Transform Your Business with AI & Agentic Coding</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#4f46e5',    // Deep Indigo (Better for light theme contrast)
+                        secondary: '#7c3aed',  // Vivid Violet
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        .gradient-text {
+            background: linear-gradient(to right, #4f46e5, #7c3aed, #c026d3);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+        }
+        .glass-light {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(226, 232, 240, 0.8);
+        }
+        .glow-light {
+            box-shadow: 0 10px 25px -5px rgba(79, 70, 229, 0.25);
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.05), 0 10px 10px -5px rgba(0, 0, 0, 0.02);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-light shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <span class="text-2xl font-bold text-slate-900">Your<span class="text-primary">Agency</span></span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#services" class="text-slate-600 hover:text-primary transition-colors px-3 py-2 text-sm font-medium">Services</a>
+                        <a href="#how-it-works" class="text-slate-600 hover:text-primary transition-colors px-3 py-2 text-sm font-medium">How it Works</a>
+                        <a href="#why-us" class="text-slate-600 hover:text-primary transition-colors px-3 py-2 text-sm font-medium">Why Us</a>
+                        <a href="#contact" class="text-slate-600 hover:text-primary transition-colors px-3 py-2 text-sm font-medium">Contact</a>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <a href="#contact" class="gradient-bg text-white px-4 py-2 rounded-lg text-sm font-semibold hover:opacity-90 transition-opacity glow-light">Book a Call</a>
+                </div>
+                <div class="-mr-2 flex md:hidden">
+                    <button type="button" class="bg-slate-100 inline-flex items-center justify-center p-2 rounded-md text-slate-600 hover:text-primary hover:bg-slate-200 focus:outline-none" id="mobile-menu-btn">
+                        <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div class="hidden md:hidden absolute top-16 inset-x-0 p-2 transition transform origin-top-right" id="mobile-menu">
+            <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y divide-slate-200">
+                <div class="pt-2 pb-3 space-y-1">
+                    <a href="#services" class="block px-3 py-2 rounded-md text-base font-medium text-slate-600 hover:text-primary hover:bg-slate-50">Services</a>
+                    <a href="#how-it-works" class="block px-3 py-2 rounded-md text-base font-medium text-slate-600 hover:text-primary hover:bg-slate-50">How it Works</a>
+                    <a href="#why-us" class="block px-3 py-2 rounded-md text-base font-medium text-slate-600 hover:text-primary hover:bg-slate-50">Why Us</a>
+                    <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium gradient-bg text-white text-center glow-light">Book a Call</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-white">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute top-20 left-10 w-72 h-72 bg-indigo-100 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-pulse"></div>
+            <div class="absolute top-40 right-10 w-72 h-72 bg-violet-100 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-pulse" style="animation-delay: 2s;"></div>
+        </div>
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <span class="inline-block px-4 py-1.5 mb-6 text-xs font-semibold tracking-wider text-primary uppercase bg-indigo-50 rounded-full border border-indigo-100">
+                Next-Gen Automation Agency
+            </span>
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6 text-slate-900">
+                Supercharge Your Business with <br>
+                <span class="gradient-text">AI & Agentic Coding</span>
+            </h1>
+            <p class="max-w-2xl mx-auto text-xl text-slate-600 mb-10">
+                We build intelligent, autonomous AI agents and integrate cutting-edge automation into your workflows to skyrocket productivity and reduce operational costs.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#contact" class="gradient-bg text-white px-8 py-4 rounded-lg text-lg font-semibold hover:opacity-90 transition-opacity glow-light">Get Your Free AI Audit</a>
+                <a href="#services" class="bg-white text-slate-900 border border-slate-200 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-slate-50 transition-colors shadow-sm">Explore Services</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Next-Gen AI Solutions</h2>
+                <p class="text-slate-600 max-w-2xl mx-auto">From autonomous coding assistants to full-scale business process automation, we deliver the tools you need to dominate your market.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm card-hover">
+                    <div class="w-12 h-12 rounded-lg gradient-bg flex items-center justify-center mb-6 shadow-md">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Agentic Coding Systems</h3>
+                    <p class="text-slate-600">Deploy AI developers that write, test, and deploy code autonomously, accelerating your software development lifecycle by 10x.</p>
+                </div>
+                <!-- Service 2 -->
+                <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm card-hover">
+                    <div class="w-12 h-12 rounded-lg gradient-bg flex items-center justify-center mb-6 shadow-md">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Workflow Automation</h3>
+                    <p class="text-slate-600">Eliminate manual bottlenecks. We connect your tools with AI agents that handle data entry, reporting, and customer communications 24/7.</p>
+                </div>
+                <!-- Service 3 -->
+                <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm card-hover">
+                    <div class="w-12 h-12 rounded-lg gradient-bg flex items-center justify-center mb-6 shadow-md">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Custom AI Consulting</h3>
+                    <p class="text-slate-600">Not sure where to start? We analyze your business operations and design a tailored AI roadmap to maximize ROI and efficiency.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Us Section -->
+    <section id="why-us" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-6">Why Partner With Us?</h2>
+                    <p class="text-slate-600 text-lg mb-8">We don't just implement AI; we build autonomous systems that work *for* you. Our expertise in agentic frameworks means your business evolves and adapts without constant human intervention.</p>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0">
+                                <div class="w-8 h-8 rounded-full bg-indigo-100 text-primary flex items-center justify-center font-bold">1</div>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-lg font-semibold text-slate-900">10x Faster Execution</h4>
+                                <p class="text-slate-600">Let AI agents handle the heavy lifting, freeing your human team for high-level strategy.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0">
+                                <div class="w-8 h-8 rounded-full bg-indigo-100 text-primary flex items-center justify-center font-bold">2</div>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-lg font-semibold text-slate-900">Cutting-Edge Tech Stack</h4>
+                                <p class="text-slate-600">We use the latest agentic frameworks to ensure your systems are future-proof and highly scalable.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0">
+                                <div class="w-8 h-8 rounded-full bg-indigo-100 text-primary flex items-center justify-center font-bold">3</div>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-lg font-semibold text-slate-900">Measurable ROI</h4>
+                                <p class="text-slate-600">We track metrics closely to ensure every AI integration directly impacts your bottom line.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-10 lg:mt-0 relative">
+                    <!-- Dark terminal block for visual contrast and "developer" aesthetic -->
+                    <div class="bg-slate-900 rounded-2xl p-8 relative overflow-hidden shadow-2xl">
+                        <div class="flex space-x-2 mb-6">
+                            <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                            <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                            <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                        </div>
+                        <div class="space-y-4 font-mono text-sm">
+                            <div class="bg-slate-800 p-3 rounded-lg flex items-center space-x-3">
+                                <div class="w-2 h-2 rounded-full bg-green-400 animate-pulse"></div>
+                                <span class="text-green-400">Agent_Alpha compiling code...</span>
+                            </div>
+                            <div class="bg-slate-800 p-3 rounded-lg flex items-center space-x-3">
+                                <div class="w-2 h-2 rounded-full bg-blue-400 animate-pulse"></div>
+                                <span class="text-blue-400">Data pipeline optimized successfully.</span>
+                            </div>
+                            <div class="bg-slate-800 p-3 rounded-lg flex items-center space-x-3">
+                                <div class="w-2 h-2 rounded-full bg-purple-400 animate-pulse"></div>
+                                <span class="text-purple-400">Deploying autonomous workflow...</span>
+                            </div>
+                            <div class="text-center pt-4 border-t border-slate-700 mt-6">
+                                <p class="text-4xl font-bold text-white">+340%</p>
+                                <p class="text-slate-400 text-xs uppercase tracking-widest">Avg. Productivity Increase</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How it Works Section -->
+    <section id="how-it-works" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Our Process</h2>
+                <p class="text-slate-600 max-w-2xl mx-auto">A streamlined approach to transforming your operations.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="text-center bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+                    <div class="w-16 h-16 rounded-full gradient-bg flex items-center justify-center mx-auto mb-4 text-2xl font-bold text-white shadow-lg">1</div>
+                    <h4 class="text-lg font-bold text-slate-900 mb-2">Discovery</h4>
+                    <p class="text-slate-600 text-sm">We deep-dive into your pain points and existing tech stack.</p>
+                </div>
+                <div class="text-center bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+                    <div class="w-16 h-16 rounded-full gradient-bg flex items-center justify-center mx-auto mb-4 text-2xl font-bold text-white shadow-lg">2</div>
+                    <h4 class="text-lg font-bold text-slate-900 mb-2">Architecture</h4>
+                    <p class="text-slate-600 text-sm">Designing the perfect agentic workflow for your specific needs.</p>
+                </div>
+                <div class="text-center bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+                    <div class="w-16 h-16 rounded-full gradient-bg flex items-center justify-center mx-auto mb-4 text-2xl font-bold text-white shadow-lg">3</div>
+                    <h4 class="text-lg font-bold text-slate-900 mb-2">Implementation</h4>
+                    <p class="text-slate-600 text-sm">Building, training, and deploying the AI agents securely.</p>
+                </div>
+                <div class="text-center bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+                    <div class="w-16 h-16 rounded-full gradient-bg flex items-center justify-center mx-auto mb-4 text-2xl font-bold text-white shadow-lg">4</div>
+                    <h4 class="text-lg font-bold text-slate-900 mb-2">Optimization</h4>
+                    <p class="text-slate-600 text-sm">Continuous monitoring and upgrading of your AI workforce.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="bg-gradient-to-br from-slate-50 to-indigo-50 border border-indigo-100 rounded-3xl p-12 relative overflow-hidden shadow-xl">
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Ready to build the future?</h2>
+                <p class="text-slate-600 text-lg mb-8 max-w-2xl mx-auto">Stop doing manual work. Let's build an AI workforce that scales with your business. Book a free 30-minute discovery call today.</p>
+                <a href="mailto:hello@yourbusiness.com" class="inline-block gradient-bg text-white px-10 py-4 rounded-lg text-lg font-semibold hover:opacity-90 transition-opacity glow-light">
+                    Schedule Free Consultation
+                </a>
+                <p class="mt-4 text-sm text-slate-500">No commitment required. 100% confidential.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <!-- Dark footer provides a nice visual anchor to a light-themed site -->
+    <footer class="bg-slate-900 border-t border-slate-800 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0 text-center md:text-left">
+                    <span class="text-2xl font-bold text-white">Your<span class="text-indigo-400">Agency</span></span>
+                    <p class="text-slate-400 text-sm mt-2">Transforming businesses with AI & Agentic Coding.</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-slate-400 hover:text-white transition-colors"><span class="sr-only">Twitter</span>
+                        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 010 18.407a11.616 11.616 0 006.29 1.84"></path></svg>
+                    </a>
+                    <a href="#" class="text-slate-400 hover:text-white transition-colors"><span class="sr-only">LinkedIn</span>
+                        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="mt-8 border-t border-slate-800 pt-8 text-center text-slate-500 text-sm">
+                &copy; 2026 YourAgency. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        
+        btn?.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        const links = document.querySelectorAll('#mobile-menu a');
+        links.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
