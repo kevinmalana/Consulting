@@ -148,7 +148,7 @@
     </section>
 
     <!-- Services -->
-    <section id="services" class="py-20 px-6 bg-white border-y border-zinc-200">
+    <section id="services" class="py-24 px-6">
         <div class="max-w-6xl mx-auto">
             <div class="mb-12 fade-in">
                 <h2 class="text-sm font-mono text-accent uppercase tracking-widest mb-2">01 / Infrastructure</h2>
@@ -295,45 +295,60 @@
         </div>
     </section>
 
-    <!-- Contact -->
-    <section id="contact" class="py-24 px-6 bg-white border-t border-zinc-200">
-        <div class="max-w-3xl mx-auto text-center fade-in">
-            <h2 class="text-3xl md:text-4xl font-semibold tracking-tight text-zinc-900 mb-4">Ready to build the future?</h2>
-            <p class="text-zinc-600 mb-8 leading-relaxed">Stop doing manual work. Let's build an AI workforce that scales with your business. Book a free 30-minute discovery call today.</p>
-            <a href="mailto:jamesmalana@hotmail.com" class="inline-block bg-zinc-900 text-white px-8 py-4 rounded-md text-sm font-medium hover:bg-zinc-800 transition-colors shadow-sm">
-                Schedule Free Consultation
-            </a>
-            <p class="mt-4 text-xs text-zinc-500">No commitment required. 100% confidential.</p>
+    <!-- Contact Form -->
+    <section id="contact" class="py-24 px-6 bg-zinc-50/50 border-t border-zinc-200">
+        <div class="max-w-xl mx-auto fade-in">
+            <div class="text-center mb-12">
+                <h2 class="text-sm font-mono text-accent uppercase tracking-widest mb-2">04 / Initialize</h2>
+                <h3 class="text-3xl font-semibold tracking-tight text-zinc-900 mb-4">Ready to build the future?</h3>
+                <p class="text-zinc-600">Stop doing manual work. Submit your bottleneck below and we will architect a solution.</p>
+            </div>
+            <form class="bg-white border border-zinc-200 rounded-xl p-8 shadow-sm space-y-6 text-left" action="https://formspree.io/f/xyzplaceholder" method="POST">
+                <div>
+                    <label class="block text-xs font-mono text-zinc-500 uppercase tracking-wider mb-2">01 / Your Name</label>
+                    <input type="text" name="name" required class="w-full bg-zinc-50 border border-zinc-200 rounded-md px-4 py-2 text-zinc-900 focus:outline-none focus:ring-2 focus:ring-accent/20 focus:border-accent transition">
+                </div>
+                <div>
+                    <label class="block text-xs font-mono text-zinc-500 uppercase tracking-wider mb-2">02 / Work Email</label>
+                    <input type="email" name="email" required class="w-full bg-zinc-50 border border-zinc-200 rounded-md px-4 py-2 text-zinc-900 focus:outline-none focus:ring-2 focus:ring-accent/20 focus:border-accent transition">
+                </div>
+                <div>
+                    <label class="block text-xs font-mono text-zinc-500 uppercase tracking-wider mb-2">03 / The Bottleneck</label>
+                    <textarea name="message" rows="4" required class="w-full bg-zinc-50 border border-zinc-200 rounded-md px-4 py-2 text-zinc-900 focus:outline-none focus:ring-2 focus:ring-accent/20 focus:border-accent transition" placeholder="Describe the manual process or operational drag you want to automate..."></textarea>
+                </div>
+                <button type="submit" class="w-full bg-zinc-900 text-white px-6 py-3 rounded-md text-sm font-medium hover:bg-zinc-800 transition-colors shadow-sm flex items-center justify-center gap-2 group">
+                    <span>Initialize Discovery Call</span>
+                    <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                </button>
+                <p class="text-center text-xs text-zinc-400 font-mono">NO_COMMITMENT_REQUIRED // 100%_CONFIDENTIAL</p>
+            </form>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="py-12 px-6 border-t border-zinc-200 bg-zinc-50">
-        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center text-sm text-zinc-500">
-            <span class="font-semibold text-zinc-900 tracking-tight mb-4 md:mb-0"><span class="font-mono text-accent">&gt;_</span> Consulting</span>
-            <span>&copy; 2026 Consulting. Engineered with precision.</span>
+    <footer class="py-12 px-6 border-t border-zinc-200 bg-white">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center text-sm text-zinc-500 gap-4">
+            <span class="font-semibold text-zinc-900 tracking-tight flex items-center gap-2">
+                <span class="font-mono text-accent">&gt;_</span> Consulting
+            </span>
+            <span class="font-mono text-xs">&copy; 2026 Consulting. Engineered with precision.</span>
         </div>
     </footer>
 
     <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => { mobileMenu.classList.toggle('hidden'); });
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => { mobileMenu.classList.add('hidden'); });
+        });
+
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                    observer.unobserve(entry.target);
-                }
+                if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); }
             });
         }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
         document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
-
-        document.getElementById('menu-btn')?.addEventListener('click', () => {
-            document.getElementById('mobile-menu').classList.toggle('hidden');
-        });
-        document.querySelectorAll('#mobile-menu a').forEach(link => {
-            link.addEventListener('click', () => {
-                document.getElementById('mobile-menu').classList.add('hidden');
-            });
-        });
     </script>
 </body>
 </html>
