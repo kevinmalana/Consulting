@@ -65,14 +65,11 @@
                 <a href="#contact" class="hidden md:block text-sm font-medium bg-zinc-900 text-white px-4 py-2 rounded-md hover:bg-zinc-800 transition-colors shadow-sm">
                     Initialize Call
                 </a>
-                <!-- Mobile Menu Button -->
                 <button id="menu-btn" class="md:hidden p-2 text-zinc-600 hover:text-zinc-900 focus:outline-none">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
                 </button>
             </div>
         </div>
-
-        <!-- Mobile Menu Dropdown -->
         <div id="mobile-menu" class="hidden md:hidden absolute top-16 left-0 w-full bg-white border-b border-zinc-200 shadow-lg p-6 space-y-4 text-sm font-medium text-zinc-600">
             <a href="#proof" class="block hover:text-accent transition-colors">Deployments</a>
             <a href="#services" class="block hover:text-accent transition-colors">Infrastructure</a>
@@ -81,7 +78,7 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Hero -->
     <header class="pt-36 pb-24 px-6">
         <div class="max-w-4xl mx-auto text-center fade-in">
             <div class="inline-flex items-center px-3 py-1 rounded-full border border-zinc-200 bg-white text-xs font-mono text-zinc-500 mb-8 shadow-sm">
@@ -105,12 +102,11 @@
         </div>
     </header>
 
-    <!-- Social Proof / Case Studies -->
+    <!-- Case Studies -->
     <section id="proof" class="py-20 px-6 border-y border-zinc-200 bg-zinc-50/50">
         <div class="max-w-6xl mx-auto">
             <h2 class="text-sm font-mono text-zinc-500 uppercase tracking-widest mb-8 fade-in">&gt; ./fetch_case_studies.sh</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <!-- Case 1 -->
                 <div class="bg-white border border-zinc-200 rounded-lg p-6 bento-hover fade-in">
                     <div class="flex items-center justify-between mb-4">
                         <span class="text-xs font-mono text-zinc-400">CLIENT_0x1A</span>
@@ -123,7 +119,6 @@
                         <span class="text-accent font-semibold">-82%</span>
                     </div>
                 </div>
-                <!-- Case 2 -->
                 <div class="bg-white border border-zinc-200 rounded-lg p-6 bento-hover fade-in">
                     <div class="flex items-center justify-between mb-4">
                         <span class="text-xs font-mono text-zinc-400">CLIENT_0x2B</span>
@@ -136,7 +131,6 @@
                         <span class="text-accent font-semibold">4,200/yr</span>
                     </div>
                 </div>
-                <!-- Case 3 -->
                 <div class="bg-white border border-zinc-200 rounded-lg p-6 bento-hover fade-in">
                     <div class="flex items-center justify-between mb-4">
                         <span class="text-xs font-mono text-zinc-400">CLIENT_0x3C</span>
@@ -153,7 +147,7 @@
         </div>
     </section>
 
-    <!-- Services / Infrastructure -->
+    <!-- Services -->
     <section id="services" class="py-20 px-6 bg-white border-y border-zinc-200">
         <div class="max-w-6xl mx-auto">
             <div class="mb-12 fade-in">
@@ -161,9 +155,7 @@
                 <h3 class="text-3xl font-semibold tracking-tight text-zinc-900">Enterprise-Grade Capabilities</h3>
                 <p class="text-zinc-600 mt-3 max-w-xl">We build the secure, scalable foundations required for autonomous agents to operate safely in production environments.</p>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4 auto-rows-[minmax(220px,auto)]">
-                <!-- Large Card: Security & Infra -->
                 <div class="md:col-span-2 bg-white border border-zinc-200 rounded-xl p-8 bento-hover fade-in flex flex-col justify-between">
                     <div>
                         <div class="w-10 h-10 rounded-md bg-zinc-100 flex items-center justify-center mb-6 text-zinc-900">
@@ -177,8 +169,6 @@
                         > status: zero_trust_enforced
                     </div>
                 </div>
-
-                <!-- Tall Card: Integrations -->
                 <div class="bg-white border border-zinc-200 rounded-xl p-8 bento-hover fade-in flex flex-col justify-between">
                     <div>
                         <div class="w-10 h-10 rounded-md bg-zinc-100 flex items-center justify-center mb-6 text-zinc-900">
@@ -188,8 +178,6 @@
                         <p class="text-zinc-600 leading-relaxed">We securely bridge modern LLMs with your legacy SQL databases, internal CRMs, and proprietary webhooks.</p>
                     </div>
                 </div>
-
-                <!-- Wide Bottom Card: Swarms & Apps -->
                 <div class="md:col-span-3 bg-white border border-zinc-200 rounded-xl p-8 bento-hover fade-in flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
                     <div class="flex items-start gap-6">
                         <div class="w-10 h-10 rounded-md bg-zinc-100 flex items-center justify-center text-zinc-900 flex-shrink-0">
@@ -205,73 +193,37 @@
         </div>
     </section>
 
-    <!-- Process -->
-    <section id="process" class="py-24 px-6">
-        <div class="max-w-6xl mx-auto">
-            <div class="mb-16 text-center fade-in">
-                <h2 class="text-sm font-mono text-accent uppercase tracking-widest mb-2">02 / Process</h2>
-                <h3 class="text-3xl font-semibold tracking-tight text-zinc-900">How We Work</h3>
-                <p class="text-zinc-600 mt-3">From first call to production deployment — a process that takes weeks, not months.</p>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 relative">
-                <div class="hidden md:block absolute top-8 left-0 w-full h-px bg-zinc-200"></div>
-                <div class="relative fade-in">
-                    <div class="w-16 h-16 rounded-full bg-white border-2 border-orange-200 flex items-center justify-center mx-auto mb-6 text-lg font-mono text-accent shadow-sm relative z-10">01</div>
-                    <h4 class="text-lg font-semibold text-zinc-900 mb-2 text-center">Discovery</h4>
-                    <p class="text-sm text-zinc-600 text-center">We deep-dive into your stack, pain points, and identify the highest-leverage automation targets.</p>
-                </div>
-                <div class="relative fade-in">
-                    <div class="w-16 h-16 rounded-full bg-white border-2 border-orange-200 flex items-center justify-center mx-auto mb-6 text-lg font-mono text-accent shadow-sm relative z-10">02</div>
-                    <h4 class="text-lg font-semibold text-zinc-900 mb-2 text-center">Architecture</h4>
-                    <p class="text-sm text-zinc-600 text-center">We design the agentic system, choose the right models, and map integrations to your existing tools.</p>
-                </div>
-                <div class="relative fade-in">
-                    <div class="w-16 h-16 rounded-full bg-white border-2 border-orange-200 flex items-center justify-center mx-auto mb-6 text-lg font-mono text-accent shadow-sm relative z-10">03</div>
-                    <h4 class="text-lg font-semibold text-zinc-900 mb-2 text-center">Ship & Iterate</h4>
-                    <p class="text-sm text-zinc-600 text-center">We build, test, and deploy within days — not months. Fast feedback loops with real users.</p>
-                </div>
-                <div class="relative fade-in">
-                    <div class="w-16 h-16 rounded-full bg-white border-2 border-orange-200 flex items-center justify-center mx-auto mb-6 text-lg font-mono text-accent shadow-sm relative z-10">04</div>
-                    <h4 class="text-lg font-semibold text-zinc-900 mb-2 text-center">Optimize & Scale</h4>
-                    <p class="text-sm text-zinc-600 text-center">Continuous monitoring, agent fine-tuning, and scaling as your business grows.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Why Us & Terminal -->
-    <section class="py-20 px-6 bg-white border-y border-zinc-200">
+    <!-- Methodology & Terminal -->
+    <section class="py-24 px-6 bg-white border-y border-zinc-200">
         <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div class="fade-in">
-                <h2 class="text-sm font-mono text-accent uppercase tracking-widest mb-2">03 / Why Us</h2>
-                <h3 class="text-3xl font-semibold tracking-tight text-zinc-900 mb-6">Engineered, Not Demoed</h3>
-                <p class="text-zinc-600 mb-8 leading-relaxed">We don't build proof-of-concepts that break on edge cases. Our agents self-heal, self-monitor, and run in production without babysitting.</p>
+                <h2 class="text-sm font-mono text-accent uppercase tracking-widest mb-2">02 / Methodology</h2>
+                <h3 class="text-3xl font-semibold tracking-tight text-zinc-900 mb-6">Why Partner With Us?</h3>
+                <p class="text-zinc-600 mb-8 leading-relaxed">We don't just implement AI; we build autonomous systems that work <em>for</em> you. Our expertise in agentic frameworks means your business evolves and adapts without constant human intervention.</p>
                 <div class="space-y-6">
                     <div class="flex gap-4">
-                        <div class="w-8 h-8 rounded-full border border-orange-200 bg-orange-50 flex items-center justify-center text-xs font-mono text-accent flex-shrink-0">01</div>
+                        <div class="w-8 h-8 rounded-full border border-zinc-200 flex items-center justify-center text-xs font-mono text-zinc-500 flex-shrink-0">01</div>
                         <div>
-                            <h4 class="font-semibold text-zinc-900 mb-1">Production-Ready from Day 1</h4>
-                            <p class="text-sm text-zinc-600">CI/CD, monitoring, error handling, and rate limiting built into every deployment.</p>
+                            <h4 class="font-semibold text-zinc-900 mb-1">10x Faster Execution</h4>
+                            <p class="text-sm text-zinc-600">Let AI agents handle the heavy lifting, freeing your human team for high-level strategy.</p>
                         </div>
                     </div>
                     <div class="flex gap-4">
-                        <div class="w-8 h-8 rounded-full border border-orange-200 bg-orange-50 flex items-center justify-center text-xs font-mono text-accent flex-shrink-0">02</div>
+                        <div class="w-8 h-8 rounded-full border border-zinc-200 flex items-center justify-center text-xs font-mono text-zinc-500 flex-shrink-0">02</div>
                         <div>
-                            <h4 class="font-semibold text-zinc-900 mb-1">Stack You Already Know</h4>
-                            <p class="text-sm text-zinc-600">Next.js, Supabase, Vercel, AWS — no proprietary lock-in, no esoteric tools your team can't maintain.</p>
+                            <h4 class="font-semibold text-zinc-900 mb-1">Cutting-Edge Tech Stack</h4>
+                            <p class="text-sm text-zinc-600">We use the latest agentic frameworks to ensure your systems are future-proof and highly scalable.</p>
                         </div>
                     </div>
                     <div class="flex gap-4">
-                        <div class="w-8 h-8 rounded-full border border-orange-200 bg-orange-50 flex items-center justify-center text-xs font-mono text-accent flex-shrink-0">03</div>
+                        <div class="w-8 h-8 rounded-full border border-zinc-200 flex items-center justify-center text-xs font-mono text-zinc-500 flex-shrink-0">03</div>
                         <div>
-                            <h4 class="font-semibold text-zinc-900 mb-1">Measurable, Not Magical</h4>
-                            <p class="text-sm text-zinc-600">We track every integration against your bottom line. No vanity metrics — just faster shipping.</p>
+                            <h4 class="font-semibold text-zinc-900 mb-1">Measurable ROI</h4>
+                            <p class="text-sm text-zinc-600">We track metrics closely to ensure every AI integration directly impacts your bottom line.</p>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <!-- Terminal -->
             <div class="fade-in">
                 <div class="bg-zinc-950 rounded-xl shadow-2xl overflow-hidden border border-zinc-800">
                     <div class="flex items-center justify-between px-4 py-3 bg-zinc-900 border-b border-zinc-800">
@@ -280,33 +232,28 @@
                             <div class="w-3 h-3 rounded-full bg-zinc-700"></div>
                             <div class="w-3 h-3 rounded-full bg-zinc-700"></div>
                         </div>
-                        <span class="text-xs font-mono text-zinc-500">agent_orchestrator.log</span>
+                        <span class="text-xs font-mono text-zinc-500">agent_swarm.sh</span>
                         <div class="w-12"></div>
                     </div>
                     <div class="p-6 font-mono text-sm space-y-4 text-zinc-400">
                         <div class="flex items-center gap-2">
                             <span class="text-accent">&gt;</span>
-                            <span>initializing swarm (n=6 agents)</span>
+                            <span>initializing autonomous agents...</span>
                             <span class="text-green-500 ml-auto">OK</span>
                         </div>
                         <div class="flex items-center gap-2">
                             <span class="text-accent">&gt;</span>
-                            <span>connected to production pipeline</span>
+                            <span>connected to crm_api (status: 200)</span>
                             <span class="text-green-500 ml-auto">OK</span>
                         </div>
                         <div class="flex items-center gap-2">
                             <span class="text-accent">&gt;</span>
-                            <span>PR #847 auto-reviewed + merged (4.2s)</span>
-                            <span class="text-green-500 ml-auto">OK</span>
-                        </div>
-                        <div class="flex items-center gap-2">
-                            <span class="text-accent">&gt;</span>
-                            <span>weekly_report generated → slack #engineering</span>
+                            <span>background_task completed in 4.2s</span>
                             <span class="text-green-500 ml-auto">OK</span>
                         </div>
                         <div class="pt-4 mt-4 border-t border-zinc-800 flex items-baseline justify-between">
                             <span class="text-zinc-500 text-xs uppercase tracking-wider">System Efficiency Delta</span>
-                            <span class="text-2xl font-semibold text-accent tracking-tight">+340%</span>
+                            <span class="text-2xl font-semibold text-white tracking-tight">+340%</span>
                         </div>
                     </div>
                 </div>
@@ -314,26 +261,57 @@
         </div>
     </section>
 
+    <!-- Process -->
+    <section id="process" class="py-24 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="mb-16 text-center fade-in">
+                <h2 class="text-sm font-mono text-accent uppercase tracking-widest mb-2">03 / Execution</h2>
+                <h3 class="text-3xl font-semibold tracking-tight text-zinc-900">Our Process</h3>
+                <p class="text-zinc-600 mt-3">A streamlined approach to transforming your operations.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 relative">
+                <div class="hidden md:block absolute top-8 left-0 w-full h-px bg-zinc-200"></div>
+                <div class="relative fade-in">
+                    <div class="w-16 h-16 rounded-full bg-white border border-zinc-200 flex items-center justify-center mx-auto mb-6 text-lg font-mono text-zinc-900 shadow-sm relative z-10">01</div>
+                    <h4 class="text-lg font-semibold text-zinc-900 mb-2 text-center">Discovery</h4>
+                    <p class="text-sm text-zinc-600 text-center">We deep-dive into your pain points and existing tech stack.</p>
+                </div>
+                <div class="relative fade-in">
+                    <div class="w-16 h-16 rounded-full bg-white border border-zinc-200 flex items-center justify-center mx-auto mb-6 text-lg font-mono text-zinc-900 shadow-sm relative z-10">02</div>
+                    <h4 class="text-lg font-semibold text-zinc-900 mb-2 text-center">Architecture</h4>
+                    <p class="text-sm text-zinc-600 text-center">Designing the perfect agentic workflow for your specific needs.</p>
+                </div>
+                <div class="relative fade-in">
+                    <div class="w-16 h-16 rounded-full bg-white border border-zinc-200 flex items-center justify-center mx-auto mb-6 text-lg font-mono text-zinc-900 shadow-sm relative z-10">03</div>
+                    <h4 class="text-lg font-semibold text-zinc-900 mb-2 text-center">Implementation</h4>
+                    <p class="text-sm text-zinc-600 text-center">Building, training, and deploying the AI agents securely.</p>
+                </div>
+                <div class="relative fade-in">
+                    <div class="w-16 h-16 rounded-full bg-white border border-zinc-200 flex items-center justify-center mx-auto mb-6 text-lg font-mono text-zinc-900 shadow-sm relative z-10">04</div>
+                    <h4 class="text-lg font-semibold text-zinc-900 mb-2 text-center">Optimization</h4>
+                    <p class="text-sm text-zinc-600 text-center">Continuous monitoring and upgrading of your AI workforce.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact -->
-    <section id="contact" class="py-24 px-6">
+    <section id="contact" class="py-24 px-6 bg-white border-t border-zinc-200">
         <div class="max-w-3xl mx-auto text-center fade-in">
-            <h2 class="text-3xl md:text-5xl font-bold tracking-tight text-zinc-900 mb-4">Let's ship something real</h2>
-            <p class="text-zinc-600 mb-8 text-lg leading-relaxed max-w-xl mx-auto">Free 30-minute strategy session. We'll audit one workflow live and tell you exactly how we'd automate it. No pitch, no commitment.</p>
-            <a href="https://calendly.com/kevinmalana/30min" class="inline-flex items-center gap-2 bg-zinc-900 text-white px-8 py-4 rounded-md text-base font-semibold hover:bg-zinc-800 transition-colors shadow-sm">
-                Book Strategy Session
-                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+            <h2 class="text-3xl md:text-4xl font-semibold tracking-tight text-zinc-900 mb-4">Ready to build the future?</h2>
+            <p class="text-zinc-600 mb-8 leading-relaxed">Stop doing manual work. Let's build an AI workforce that scales with your business. Book a free 30-minute discovery call today.</p>
+            <a href="mailto:jamesmalana@hotmail.com" class="inline-block bg-zinc-900 text-white px-8 py-4 rounded-md text-sm font-medium hover:bg-zinc-800 transition-colors shadow-sm">
+                Schedule Free Consultation
             </a>
-            <p class="mt-6 text-sm text-zinc-400">Prefer email? <a href="mailto:jamesmalana@hotmail.com" class="text-accent hover:text-orange-700 underline underline-offset-2">jamesmalana@hotmail.com</a></p>
+            <p class="mt-4 text-xs text-zinc-500">No commitment required. 100% confidential.</p>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="py-12 px-6 border-t border-zinc-200 bg-zinc-50">
         <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center text-sm text-zinc-500">
-            <span class="flex items-center gap-2 font-semibold text-zinc-900 tracking-tight mb-4 md:mb-0">
-                <span class="font-mono text-accent">&gt;_</span> Consulting
-            </span>
-            <span>&copy; 2026 Consulting. Engineered with precision. Not AI-generated — AI-engineered.</span>
+            <span class="font-semibold text-zinc-900 tracking-tight mb-4 md:mb-0"><span class="font-mono text-accent">&gt;_</span> Consulting</span>
+            <span>&copy; 2026 Consulting. Engineered with precision.</span>
         </div>
     </footer>
 
@@ -346,19 +324,14 @@
                 }
             });
         }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
-
         document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 
-        const menuBtn = document.getElementById('menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-
-        menuBtn?.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
+        document.getElementById('menu-btn')?.addEventListener('click', () => {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
         });
-
-        mobileMenu?.querySelectorAll('a').forEach(link => {
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
             link.addEventListener('click', () => {
-                mobileMenu.classList.add('hidden');
+                document.getElementById('mobile-menu').classList.add('hidden');
             });
         });
     </script>
